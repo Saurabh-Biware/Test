@@ -3,6 +3,7 @@ import subprocess
 import sys
 from main import hello_world
 
+
 class TestHelloWorld(unittest.TestCase):
 
     def test_hello_world(self):
@@ -16,6 +17,7 @@ class TestHelloWorld(unittest.TestCase):
             text=True
         )
         self.assertEqual(result.stdout.strip(), "Hello World!")
+
 
 if __name__ == "__main__":
     unittest.main()
